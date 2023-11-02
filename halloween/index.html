@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Falls Things</h1>
+        <div id="carrinho">
+            <div id="contador">0</div>
+        </div>
+    </header>
+    <main>
+        <div id="grid-tamplate">
+            <div class="conteudo">
+                <img src="img/download.jfif" alt="">
+                <h2>gato zoiudo</h2>
+                <button class="butao" onclick="contador()">Clique aqui</button>
+            </div>
+            <div class="conteudo">
+                <img src="img/chifre.jpg" alt="">
+                <h2>chifre de unicornio</h2>
+                <button class="butao" onclick="contador()">Clique aqui</button>
+            </div>
+            <div class="conteudo">
+                <img src="img/poison.jpg" alt="">
+                <h2>veneno antigo</h2>
+                <button class="butao" onclick="contador()">Clique aqui</button>
+            </div>
+            <div class="conteudo">
+                <img src="img/amuleto.jpg" alt="">
+                <h2>amuleto egipsio</h2>
+                <button class="butao" onclick="contador()">Clique aqui</button>
+            </div>
+            <div class="conteudo">
+                <img src="img/asas.jpg" alt="">
+                <h2>asas de fada</h2>
+                <button class="butao" onclick="contador()">Clique aqui</button>
+            </div>
+            <div class="conteudo">
+                <img src="img/estaca.jpg" alt="">
+                <h2>estaca antiga</h2>
+                <button class="butao" onclick="contador()">Clique aqui</button>
+            </div>
+            <div class="conteudo">
+                <img src="img/voodoo.jpg" alt="">
+                <h2>estatueta voodoo</h2>
+                <button class="butao" onclick="contador()">Clique aqui</button>
+            </div>
+            <div class="conteudo">
+                <img src="img/anel.jpg" alt="">
+                <h2>anel de roseta</h2>
+                <button class="butao" onclick="contador()">Clique aqui</button>
+            </div>
+        </div>
+    </main>
+    </body>
+    <script>
+        let contElemento = document.getElementById("contador");
+        let cont = 0;
+        function contador(){
+            cont++
+
+            contElemento.innerHTML = cont;
+
+        }
+    </script>
+</html>
